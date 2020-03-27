@@ -1,0 +1,57 @@
+@mixin coverbackground ($img-uri, $background-top: "center", $background-left: "center")
+	background: url($img-uri) no-repeat unquote($background-top) unquote($background-left)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	color: transparent
+
+
+@mixin userSelect
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	-o-user-select: none
+	user-select: none
+	
+@mixin flex
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -moz-flex
+	display: -webkit-flex
+	display: flex
+
+@mixin transition($args) 
+	-webkit-transition: $args
+	-moz-transition: $args
+	-ms-transition: $args
+	-o-transition: $args
+	transition: $args
+
+@mixin transform__scale ($trans)
+	transform: scale($trans)
+	-moz-transform: scale($trans)
+	-webkit-transform: scale($trans)
+	-o-transform: scale($trans)
+	-ms-transform: scale($trans)
+
+@mixin transform__opacity($op)	
+	transition: opacity $op
+	-moz-transition: opacity $op
+	-o-transition: opacity $op
+	-webkit-transition: opacity $op
+	transition: opacity $op
+
+@mixin hover__grow
+	@include transition(.3s ease)
+	&:hover 
+		@include transform__scale(1.1)
+	&:focus
+		@include transform__scale(1.1)
+
+@mixin stick
+	bottom: 0
+	top: 0
+	right: 0
+	left: 0

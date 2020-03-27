@@ -1,0 +1,210 @@
+// Base
+
+html
+	@include transition(0.5s)	
+	background-color: $htmlColor
+
+svg
+	overflow: hidden
+
+::selection
+	background-color: $color--selection
+
+body
+	line-height: 1
+	color: $black
+	margin: 0
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-webkit-text-size-adjust: none
+	-moz-text-size-adjust: none
+	-ms-text-size-adjust: none
+	text-rendering: optimizeLegibility
+	-webkit-tap-highlight-color: transparent
+
+input, textarea, select, button
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-webkit-text-size-adjust: none
+	-moz-text-size-adjust: none
+	-ms-text-size-adjust: none
+	text-rendering: optimizeLegibility
+	-webkit-tap-highlight-color: transparent
+
+body *
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	margin: 0
+
+img
+	@include userSelect
+	display: inline-block
+	max-width: 100%
+	vertical-align: middle
+	border: none
+	position: relative
+
+div
+	position: relative
+ 	
+.grid
+	list-style: none
+	margin: 0
+	padding: 0
+	justify-content: center
+
+.gridItem
+	text-align: center
+	display: inline-block
+	vertical-align: top
+
+.one
+	width: 100%
+
+.oneHalf
+	width: 49%
+
+.oneQuarter
+	min-width: 24%
+
+.oneThird
+	width: 33%
+	@media (max-width: $screen-sm-max)
+		width: 100%
+
+.twoThird
+	width: 66%
+	@media (max-width: $screen-sm-max)
+		width: 100%
+
+header
+	width: 100%
+	position: absolute
+	top: 0
+	padding: 25px 32px 25px 25px
+	h3 
+		line-height: 1rem
+		margin: 0
+		margin-bottom: .125rem
+
+footer
+	width: 100%
+	position: fixed
+	bottom: 0
+	background: $white
+	color: $black
+	padding: 7.5px 5px 10px
+	text-align: center
+	a 	
+		color: $black
+		text-decoration: underline
+
+
+#logo
+	width: 1.5rem
+	position: relative
+	top: -5px
+
+#downCaret
+	position: absolute
+	right: -16px
+	top: 9px
+	bottom: 0
+	
+
+#site
+	@include flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	min-height: 86vh
+	max-width: 414px
+	margin: 0 auto 0
+	padding: 15px 21px
+	@media (min-width: $screen-sm-min)
+		margin: 0 auto
+		min-height: 96vh
+
+#site.about
+	
+#counter *
+	cursor: pointer
+
+#counter
+	@include flex
+	align-items: center
+	justify-content: center
+	width: 13rem
+	height: 13rem
+	margin: 0 auto
+	padding: 1rem
+	background-image: url("../../svg/count.svg")
+	h3
+		margin-bottom: 0
+	@media (min-width: $screen-sm-min)
+		width: 16rem
+		height: 16rem
+
+#bars
+	margin: .5rem 0
+	text-align: center
+
+.barDot
+	width: 1.875rem
+	height: 1.875rem
+	fill: rgba(255, 255, 255, 0.5)
+
+.count.on
+	svg
+		fill: $black
+
+#sound
+	width: 5rem
+	height: 5rem
+	margin: 1rem auto
+	#soundSvg
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: -1
+	svg
+		width: 5rem
+		height: 5rem
+		z-index: 999
+
+#adjust
+	appearance: none
+	-webkit-appearance: none
+	height: 1rem
+	border-radius: .5rem
+	background-color: $white
+	border: none
+	cursor: pointer
+	margin-bottom: 12.5px
+	width: 300px
+	max-width: 88%
+	&::-webkit-slider-thumb
+		appearance: none
+		-webkit-appearance: none
+		background-color: $black
+		border: .5rem solid $white
+		width: 2rem
+		height: 2rem
+		border-radius: 1rem
+
+.htmlAbout
+	background-color: $color--sec
+	h1, h2, h3 
+		color: $color--pri3
+	h1 
+		font-weight: 500
+	h2 	
+		font-weight: 700
+	body *
+		text-align: left
+		a 	
+			color: $color--pri3
+			font-weight: 700

@@ -1,0 +1,149 @@
+// Typography
+
+html 
+	font-family: $type
+	font-size: 1.225em
+	@media (max-width: $screen-ip5)
+		font-size: 1.15em
+	@media (min-width: $screen-md-min)
+		font-size: 1em
+	@media (min-width: $screen-lg-min)	
+		font-size: 1.15em
+
+h1
+	color: $black
+	font-family: $headline
+	font-size: $h1
+	line-height: $l1
+	font-weight: $w1
+	letter-spacing: 0.875px
+	margin-top: 15px
+	margin-bottom: 25px
+	position: relative
+	@media (max-width: $screen-ip5)
+	@media (min-width: $screen-md-min)
+	@media (min-width: $screen-lg-min)			
+
+h2
+	color: $black
+	font-family: $headline
+	font-size: $h2
+	line-height: $l2
+	font-weight: $w2
+	letter-spacing: -1px
+	margin-bottom: 35px
+	@media (max-width: $screen-ip5)
+	@media (min-width: $screen-md-min)
+	@media (min-width: $screen-lg-min)	
+
+h3
+	color: $black
+	font-family: $headline
+	font-size: $h3
+	line-height: $l3
+	font-weight: $w3
+	margin-bottom: 15px
+	letter-spacing: -1px
+	@media (max-width: $screen-ip5)
+	@media (min-width: $screen-md-min)
+	@media (min-width: $screen-lg-min)	
+
+p, ul, ol
+	color: $black
+	font-family: $type
+	font-size: $p
+	line-height: $l
+	font-weight: $w
+	margin-bottom: 1rem
+	@media (max-width: $screen-sm-max)
+	@media (max-width: $screen-ip5)
+
+li 
+	margin-bottom: 7.5px
+
+hr
+	border-color: $color--pri
+	border-style: solid
+	margin-top: 2px
+	margin: 15px 0 25px
+
+strong
+	font-weight: 700 !important
+
+a
+	color: $white
+	text-decoration: none
+	cursor: pointer
+	&:focus
+		outline: none
+		-moz-outline-style: none
+
+blockquote
+	font-family: $headline
+	font-size: $h2
+	line-height: $l2
+	margin-bottom: 1rem
+	padding: 0
+	font-weight: 200
+	font-style: italic
+	text-align: left
+	@media (max-width: $screen-ip5)
+		font-size: 48px
+		font-size: 1.875rem
+	&::before
+		font-family: $headline
+		font-weight: 700
+		font-size: 20rem
+		display: block
+		padding-left: 0
+		margin-bottom: 5px
+		content: "\201C"
+		height: 2rem
+		font-size: 80px
+		opacity: .15
+
+button
+	background: $color--pri
+	color: white
+	padding: 10px 15px
+	font-size: 1.5rem
+	font-weight: 700
+	text-transform: uppercase
+
+.sub
+	font-family: $headline
+	font-size: $h4
+	line-height: $l4
+	font-weight: 700
+	color: $color--pri
+	position: relative
+	margin-bottom: 15px
+
+.callOut
+	font-size: $h2
+	line-height: $l2
+	font-weight: 200
+
+.big
+	font-size: 9rem
+	line-height: 9rem
+	margin-bottom: 0
+
+label
+	font-size: 1.425rem
+	font-weight: 700
+	line-height: 1.5rem
+	margin-top: .5rem
+	text-transform: uppercase 
+	letter-spacing: .875px
+	padding: 0 0 10px
+	display: block
+	
+
+.preface
+	font-size: 1.5rem
+	line-height: 2rem
+	font-weight: 700 !important
+	letter-spacing: 1px
+	text-transform: uppercase
+	

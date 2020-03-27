@@ -1,0 +1,250 @@
+// Helper Classes
+
+.pointer
+	cursor: pointer	
+
+.caps
+	text-transform: uppercase
+
+.marginAuto
+	margin: 0 auto !important
+	margin-left: 0
+
+.noMargin
+	margin: 0
+	margin-left: 0
+	margin-right: 0
+	margin-bottom: 0
+	margin-top: 0
+ 
+.display-none
+	display: none
+
+.block
+	display: block	
+
+.fullWidth
+	width: 100%
+
+.mostWidth
+	width: 88%
+
+.halfWidth
+	width: 50%
+
+.thirdWidth
+	width: 33%
+
+.flex
+	@include flex
+	flex-direction: row
+	align-content: center
+
+.flexCol
+	flex-direction: column
+	
+.flexRow
+	flex-direction: row
+	justify-content: space-between
+
+.z-top
+	z-index: 999 !important
+
+.no-flow
+	overflow: hidden
+
+.invert
+	-webkit-transform: rotate(180deg)
+	-moz-transform: rotate(180deg)
+	-o-transform: rotate(180deg)
+	-ms-transform: rotate(180deg)
+	transform: rotate(180deg)
+
+.no-pad
+	padding: 0 !important
+	padding-left: 0 !important
+	padding-right: 0 !important
+	padding-bottom: 0 !important
+	padding-top: 0 !important
+
+.center-text
+	width: 100%
+	text-align: center
+
+.center
+	margin: 0 auto
+
+.color--pri
+	color: $color--pri
+	fill: $color--pri
+
+.fill-none
+	fill: none
+
+.white
+	color: $white
+	fill: $white
+
+.g0
+	fill: $g0
+	color: $g0
+
+.g1
+	fill: $g1
+	color: $g1
+
+.g2
+	fill: $g1
+	color: $g2
+
+.g3
+	fill: $g3
+	color: $g3
+
+.g4
+	fill: $g4
+	color: $g4
+
+.op0
+	opacity: 0
+
+.op5
+	opacity: 0.5
+
+.textCenter
+	text-align: center
+
+.textLeft
+	text-align: left
+
+.textRight
+	text-align: right
+
+.lightBg
+	background: #ffffff
+	color: #282828
+
+.darkBg
+	background: #232323
+	color: #ffffff
+
+
+// Positioning
+
+.topRight
+	position: absolute
+	margin: auto
+	top: 0
+	right: 22px
+	bottom: auto
+	left: auto
+
+.topLeft
+	position: absolute
+	margin: auto
+	top: 0
+	right: auto
+	bottom: auto
+	left: 0
+
+.bottomRight
+	position: absolute
+	margin: auto
+	top: auto
+	right: 22px
+	bottom: 0
+	left: auto
+
+.bottomLeft
+	position: absolute
+	margin: auto
+	top: auto
+	right: auto
+	bottom: 0
+	left: 0
+
+.bottom
+	position: absolute
+	margin: auto
+	top: auto
+	right: 0
+	bottom: 0
+	left: 0
+
+.left
+	float: left
+
+.right
+	float: right
+
+.hide
+	display: none
+
+@media (max-width: $screen-sm-max)
+	.hideMobile
+		display: none
+
+@media (min-width: $screen-md-min)
+	.showMobile
+		display: none	
+
+.bigIndentFix
+	margin-left: -16px
+
+.mediumIndentFix
+	margin-left: -9px
+
+.smallIndentFix
+	margin-left: -6px
+
+.smallerIndentFix
+	margin-left: -4px
+
+.smallerIndentFixAlt
+	margin-left: 4px
+
+.smallestIndentFix
+	margin-left: -2px
+
+.video-wrapper 
+	max-width: 88%
+	margin: 0 auto
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 25px
+	height: 0
+	iframe 
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.pad-right
+	padding-right: 15px
+
+.headline
+	font-family: $headline
+
+.light
+	font-weight: 200
+
+.bold
+	font-weight: 700
+
+.stick
+	@include stick
+
+.italic
+	font-style: italic
+
+.flexCon
+	@include flex
+	flex-direction: row
+	justify-content: space-between
+	@media (min-width: $screen-md-min)
+		flex-direction: row
+		justify-content: space-between
+
+.divDivider
+	height: $spacing*3
