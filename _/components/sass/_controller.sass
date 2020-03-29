@@ -1,0 +1,55 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.float-right
+    float: right
+
+dropdown
+    display: inline-block
+    margin: 20px 50px
+    a   
+        color: $black
+    label, ul li
+        color: $black
+        display: block
+        padding: 11.25px 10px 7.5px 15px
+    label:hover, ul li:hover
+        cursor: pointer
+    label
+        color: $black
+        position: relative
+        z-index: 2
+    input
+        display: none
+        ~ ul
+            position: relative
+            visibility: hidden
+            opacity: 0
+            top: -20px
+            z-index: 1
+        &:checked
+            ~ ul
+                visibility: visible
+                opacity: 1
+                top: 0
+    ul li
+        font-weight: 500
+        &:hover
+            color: $white
+
+    .menuAnimate
+    -webkit-transition: all .3s
+    -moz-transition: all .3s
+    -ms-transition: all .3s
+    -ms-transition: all .3s
+    transition: all .3s
+    backface-visibility: hidden
+    -webkit-backface-visibility: hidden
+
+
+#mainMenuSelect
+    max-height: 86vh
+    overflow: scroll
+    text-align: right

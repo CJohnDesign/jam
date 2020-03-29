@@ -8,7 +8,7 @@ svg
 	overflow: hidden
 
 ::selection
-	background-color: $color--selection
+	background-color: $white
 
 body
 	line-height: 1
@@ -73,6 +73,9 @@ div
 	@media (max-width: $screen-sm-max)
 		width: 100%
 
+.oneThirdSm
+	width: 31%
+
 .twoThird
 	width: 66%
 	@media (max-width: $screen-sm-max)
@@ -82,7 +85,7 @@ header
 	width: 100%
 	position: absolute
 	top: 0
-	padding: 25px 32px 25px 25px
+	padding: 25px 0px 25px 25px
 	h3 
 		line-height: 1rem
 		margin: 0
@@ -96,15 +99,13 @@ footer
 	color: $black
 	padding: 7.5px 5px 10px
 	text-align: center
+	z-index: 99999
 	a 	
 		color: $black
 		text-decoration: underline
 
-
 #logo
-	width: 1.5rem
-	position: relative
-	top: -5px
+	width: 1.875rem
 
 #downCaret
 	position: absolute
@@ -112,16 +113,15 @@ footer
 	top: 9px
 	bottom: 0
 	
-
 #site
 	@include flex
 	flex-direction: column
 	align-items: center
 	justify-content: center
 	min-height: 86vh
-	max-width: 414px
+	max-width: 450px
 	margin: 0 auto 0
-	padding: 15px 21px
+	padding: 15px 50px
 	@media (min-width: $screen-sm-min)
 		margin: 0 auto
 		min-height: 96vh
@@ -162,7 +162,7 @@ footer
 #sound
 	width: 5rem
 	height: 5rem
-	margin: 1rem auto
+	margin: 1rem auto 0
 	#soundSvg
 		position: absolute
 		top: 0
@@ -183,7 +183,7 @@ footer
 	background-color: $white
 	border: none
 	cursor: pointer
-	margin-bottom: 12.5px
+	margin: 12.5px 0
 	width: 300px
 	max-width: 88%
 	&::-webkit-slider-thumb
@@ -206,5 +206,5 @@ footer
 	body *
 		text-align: left
 		a 	
-			color: $color--pri3
+			color: $white
 			font-weight: 700

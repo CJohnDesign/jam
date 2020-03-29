@@ -2,13 +2,11 @@
 
 html 
 	font-family: $type
-	font-size: 1.225em
-	@media (max-width: $screen-ip5)
-		font-size: 1.15em
+	font-size: 1.125em
 	@media (min-width: $screen-md-min)
 		font-size: 1em
 	@media (min-width: $screen-lg-min)	
-		font-size: 1.15em
+		font-size: 1em
 
 h1
 	color: $black
@@ -87,9 +85,6 @@ blockquote
 	font-weight: 200
 	font-style: italic
 	text-align: left
-	@media (max-width: $screen-ip5)
-		font-size: 48px
-		font-size: 1.875rem
 	&::before
 		font-family: $headline
 		font-weight: 700
@@ -106,9 +101,28 @@ button
 	background: $color--pri
 	color: white
 	padding: 10px 15px
-	font-size: 1.5rem
+	font-size: 1.875rem
 	font-weight: 700
 	text-transform: uppercase
+
+.jamButton
+	@include flex
+	@include flexCenter
+	display: inline-block
+	font-size: 1.5rem
+	background-color: $clear
+	padding: .5rem
+	margin: .25rem 0 .45rem
+	width: 100%
+	color: $black !important
+	font-weight: 700
+	text-align: center !important
+	text-transform: uppercase
+	border: 3px solid $black
+	width: 4rem
+	height: 4rem
+	border-radius: 2rem
+	line-height: 2.75rem
 
 .sub
 	font-family: $headline
@@ -139,7 +153,6 @@ label
 	padding: 0 0 10px
 	display: block
 	
-
 .preface
 	font-size: 1.5rem
 	line-height: 2rem
