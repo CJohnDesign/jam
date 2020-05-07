@@ -5,13 +5,17 @@
   <meta charset="UTF-8">
 
   <title>JAM | Join A Metronome</title>
-  <meta name="description" content="A free, globally synced metronome for playing music together on the interwebs. Open beta up now - become an early adopter." />
+  <meta name="description"
+    content="A free, globally synced metronome for playing music together on the interwebs. Open beta up now - become an early adopter." />
 
   <!-- IE Edge Meta Tag -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/img/fav/apple-icon-57x57.png">
@@ -43,31 +47,31 @@
   </script>
 
   <!-- Start of Async Drift Code -->
-<script>
-  "use strict";
-  
-  !function() {
-    var t = window.driftt = window.drift = window.driftt || [];
-    if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-      t.factory = function(e) {
-        return function() {
-          var n = Array.prototype.slice.call(arguments);
-          return n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
-      };
-    }
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('9m32up6u8fnc');
+  <script>
+    "use strict";
+
+    !function () {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+          t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }), t.load = function (t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('9m32up6u8fnc');
   </script>
   <!-- End of Async Drift Code -->
 
@@ -92,41 +96,56 @@
   <div id="site">
     <div class="grid">
       <div class="gridItem one center">
+        <div style="width: 100%; text-align: center;">
+        <img src="/svg/logo.svg" alt="JAM logo" style="margin: 1rem auto 1.125rem; width: 2.125rem;">
+      </div>
         <h1>J.A.M.</h1>
         <h2>Join A Metronome.</h2>
-      </div>
-      <div class="gridItem one">
-        <p>Almost every musician in the world right now is out of a job. Performing for crowds isn't safe and playing
-          together online has always been a challenge because of latency.</p>
-        <p>Well, we can't overcome limitations of the speed of light so this is a work around to let musicians stay on
-          beat while performing online.</p>
-        <p>JAM uses your device's internal clock to create a click track. Join a live stream and use the slider to
-          correct for slight variations of each device.</p>
-        <p>So long as everyone knows the song structure, the audience will hear the band playing in unison.
-        </p>
-        <div class="videoWrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/e_O3Y-5OYF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <h4>The Steps:</h4>
-        <p>Start an Instagram Live<br>Open live stream to sync the beat<br>Perform together for the interwebs!</p>
+        <p style="margin-top: -10px;">J.A.M. lets bands play remotely together with a globally synced metronome. Use any streaming platform to perform live for the socially distanced world!</p>
         <br>
-        <h4>Quick start - Pick a BPM</h4>
+        <hr>
+        <h4>Quick start guide: <a href="/How-to-JAM.pdf" target="_blank">HOW TO J.A.M.</a></h4>
+        <br>
+        <hr><br>
+        <h4>Pick a BPM to start jamming:</h4>
+        <br>
       </div>
       <div class="gridItem oneThirdSm">
         <a class="jamButton" href="http://joinametronome.com/78">78</a>
       </div>
       <div class="gridItem oneThirdSm">
         <a class="jamButton" href="http://joinametronome.com/96">96</a>
-    </div>
-    <div class="gridItem oneThirdSm">
+      </div>
+      <div class="gridItem oneThirdSm">
         <a class="jamButton" href="http://joinametronome.com/112">112</a>
       </div>
-      <br><br><br>
+      <br><br>
       <div class="gridItem one">
-        <p>Question? - Ping me on chat<br>(I'm home like the rest of you)</p>
+        <br>
+        <hr><br>
+        <h4>See it in action:</h4>
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/e_O3Y-5OYF4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+        <hr><br>
+        <h4>About:</h4><br>
+        <p>Almost every musician in the world right now is out of work. Performing for crowds isn't safe and playing
+          together online has always been a challenge because of latency.</p>
+        <p>Well, we can't overcome limitations of the speed of light so this is a work around to let musicians stay on
+          beat while performing online.</p>
+        <p>JAM uses your device's internal clock to create a click track. Use the slider to
+          correct for slight variations of each device.</p>
+        <p>So long as everyone knows the song structure, the audience will hear the band playing in unison.
+        </p>
+        <br>
+        <hr><br>
+        <p>Question? - Ping us on chat!<br>(we're at home with rest of you)</p>
       </div>
       <br><br><br><br><br>
     </div>
+  </div>
   </div>
 
 

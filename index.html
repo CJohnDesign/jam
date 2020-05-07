@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="prop-cover">
+<html lang="en" class="htmlAbout">
 
 <head>
   <meta charset="UTF-8">
 
   <title>JAM | Join A Metronome</title>
-  <meta name="description" content="A free, globally synced metronome for playing music together on the interwebs. Open beta up now - become an early adopter." />
+  <meta name="description"
+    content="A free, globally synced metronome for playing music together on the interwebs. Open beta up now - become an early adopter." />
 
   <!-- IE Edge Meta Tag -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +14,8 @@
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161545636-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-161545636-1');
-  </script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/img/fav/apple-icon-57x57.png">
@@ -43,6 +36,45 @@
   <meta name="msapplication-TileImage" content="/img/fav/ms-icon-144x144.png">
   <meta name="theme-color" content="#ce362b">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161545636-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161545636-1');
+  </script>
+
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    !function () {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+          t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }), t.load = function (t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('9m32up6u8fnc');
+  </script>
+  <!-- End of Async Drift Code -->
+
   <!-- Facebook tags for social sharing -->
   <meta property="fb:app_id" content="" />
   <meta property="og:type" content="" />
@@ -54,215 +86,68 @@
   <!-- CSS -->
   <link rel="stylesheet" href="_/css/style.css">
 
+
 </head>
 
 
 <!-- Body -->
 
 <body>
-  <header>
-    <div class="grid">
-      <div class="gridItem oneHalf textLeft">
-        <svg id="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 340.6">
-          <polygon id="XMLID_2_" class="st0" points="211.6,103.8 4.4,103.8 43.9,276.9 84.2,276.9 84.2,339 131.8,339 131.8,276.9 
-            172.1,276.9 	"/>
-          <rect id="XMLID_6_" x="84.2" y="1.5" class="st0" width="47.7" height="82.7"/>
-        </svg>
-        
-      </div>
-      <div class="gridItem oneHalf textRight">
-        <dropdown>
-          <input id="toggle2" type="checkbox">
-          <label for="toggle2" class="menuAnimate"><h3><span id="bpm"> 0</span>▼</h3>
-            <span id="downCaret"></span>
-            <h4>BPM</h4></label>
-          <ul id="mainMenuSelect" class="animate">
-            <li class="animate"><a href="/55">55</a></li>
-            <li class="animate"><a href="/56">56</a></li>
-            <li class="animate"><a href="/57">57</a></li>
-            <li class="animate"><a href="/58">58</a></li>
-            <li class="animate"><a href="/59">59</a></li>
-            <li class="animate"><a href="/60">60</a></li>
-            <li class="animate"><a href="/61">61</a></li>
-            <li class="animate"><a href="/62">62</a></li>
-            <li class="animate"><a href="/63">63</a></li>
-            <li class="animate"><a href="/64">64</a></li>
-            <li class="animate"><a href="/65">65</a></li>
-            <li class="animate"><a href="/66">66</a></li>
-            <li class="animate"><a href="/67">67</a></li>
-            <li class="animate"><a href="/68">68</a></li>
-            <li class="animate"><a href="/69">69</a></li>
-            <li class="animate"><a href="/70">70</a></li>
-            <li class="animate"><a href="/71">71</a></li>
-            <li class="animate"><a href="/72">72</a></li>
-            <li class="animate"><a href="/73">73</a></li>
-            <li class="animate"><a href="/74">74</a></li>
-            <li class="animate"><a href="/75">75</a></li>
-            <li class="animate"><a href="/76">76</a></li>
-            <li class="animate"><a href="/77">77</a></li>
-            <li class="animate"><a href="/78">78</a></li>
-            <li class="animate"><a href="/79">79</a></li>
-            <li class="animate"><a href="/80">80</a></li>
-            <li class="animate"><a href="/81">81</a></li>
-            <li class="animate"><a href="/82">82</a></li>
-            <li class="animate"><a href="/83">83</a></li>
-            <li class="animate"><a href="/84">84</a></li>
-            <li class="animate"><a href="/85">85</a></li>
-            <li class="animate"><a href="/86">86</a></li>
-            <li class="animate"><a href="/87">87</a></li>
-            <li class="animate"><a href="/88">88</a></li>
-            <li class="animate"><a href="/89">89</a></li>
-            <li class="animate"><a href="/90">90</a></li>
-            <li class="animate"><a href="/91">91</a></li>
-            <li class="animate"><a href="/92">92</a></li>
-            <li class="animate"><a href="/93">93</a></li>
-            <li class="animate"><a href="/94">94</a></li>
-            <li class="animate"><a href="/95">95</a></li>
-            <li class="animate"><a href="/96">96</a></li>
-            <li class="animate"><a href="/97">97</a></li>
-            <li class="animate"><a href="/98">98</a></li>
-            <li class="animate"><a href="/99">99</a></li>
-            <li class="animate"><a href="/100">100</a></li>
-            <li class="animate"><a href="/101">101</a></li>
-            <li class="animate"><a href="/102">102</a></li>
-            <li class="animate"><a href="/103">103</a></li>
-            <li class="animate"><a href="/104">104</a></li>
-            <li class="animate"><a href="/105">105</a></li>
-            <li class="animate"><a href="/106">106</a></li>
-            <li class="animate"><a href="/107">107</a></li>
-            <li class="animate"><a href="/108">108</a></li>
-            <li class="animate"><a href="/109">109</a></li>
-            <li class="animate"><a href="/110">110</a></li>
-            <li class="animate"><a href="/111">111</a></li>
-            <li class="animate"><a href="/112">112</a></li>
-            <li class="animate"><a href="/113">113</a></li>
-            <li class="animate"><a href="/114">114</a></li>
-            <li class="animate"><a href="/115">115</a></li>
-            <li class="animate"><a href="/116">116</a></li>
-            <li class="animate"><a href="/117">117</a></li>
-            <li class="animate"><a href="/118">118</a></li>
-            <li class="animate"><a href="/119">119</a></li>
-            <li class="animate"><a href="/120">120</a></li>
-            <li class="animate"><a href="/121">121</a></li>
-            <li class="animate"><a href="/122">122</a></li>
-            <li class="animate"><a href="/123">123</a></li>
-            <li class="animate"><a href="/124">124</a></li>
-            <li class="animate"><a href="/125">125</a></li>
-            <li class="animate"><a href="/126">126</a></li>
-            <li class="animate"><a href="/127">127</a></li>
-            <li class="animate"><a href="/128">128</a></li>
-            <li class="animate"><a href="/129">129</a></li>
-            <li class="animate"><a href="/130">130</a></li>
-            <li class="animate"><a href="/131">131</a></li>
-            <li class="animate"><a href="/132">132</a></li>
-            <li class="animate"><a href="/133">133</a></li>
-            <li class="animate"><a href="/134">134</a></li>
-            <li class="animate"><a href="/135">135</a></li>
-            <li class="animate"><a href="/136">136</a></li>
-            <li class="animate"><a href="/137">137</a></li>
-            <li class="animate"><a href="/138">138</a></li>
-            <li class="animate"><a href="/139">139</a></li>
-            <li class="animate"><a href="/140">140</a></li>
-            <li class="animate"> </li>
-            
-            
-          </ul>
-        </dropdown>
-        
-      </div>
-    </div>
-  </header>
   <div id="site">
     <div class="grid">
+      <div class="gridItem one center">
+        <div style="width: 100%; text-align: center;">
+        <img src="/svg/logo.svg" alt="JAM logo" style="margin: 1rem auto 1.125rem; width: 2.125rem;">
+      </div>
+        <h1>J.A.M.</h1>
+        <h2>Join A Metronome.</h2>
+        <p style="margin-top: -10px;">J.A.M. lets bands play remotely together with a globally synced metronome. Use any streaming platform to perform live for the socially distanced world!</p>
+        <br>
+        <hr>
+        <h4>Quick start guide: <a href="/How-to-JAM.pdf" target="_blank">HOW TO J.A.M.</a></h4>
+        <br>
+        <hr><br>
+        <h4>Pick a BPM to start jamming:</h4>
+        <br>
+      </div>
+      <div class="gridItem oneThirdSm">
+        <a class="jamButton" href="http://joinametronome.com/78">78</a>
+      </div>
+      <div class="gridItem oneThirdSm">
+        <a class="jamButton" href="http://joinametronome.com/96">96</a>
+      </div>
+      <div class="gridItem oneThirdSm">
+        <a class="jamButton" href="http://joinametronome.com/112">112</a>
+      </div>
+      <br><br>
       <div class="gridItem one">
-        <div id="counter">
-          <p id="count" class="big"></p>
-          <h3 id="sm" class="caps">Join a<br/>metronome</h3>
-          <div id="pw" style="display: none;">
-            <h3>Please wait</h3>
-            <small>The 1 is coming around</small>
-          </div>
+        <br>
+        <hr><br>
+        <h4>See it in action:</h4>
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/e_O3Y-5OYF4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <br>
+        <hr><br>
+        <h4>About:</h4><br>
+        <p>Almost every musician in the world right now is out of work. Performing for crowds isn't safe and playing
+          together online has always been a challenge because of latency.</p>
+        <p>Well, we can't overcome limitations of the speed of light so this is a work around to let musicians stay on
+          beat while performing online.</p>
+        <p>JAM uses your device's internal clock to create a click track. Use the slider to
+          correct for slight variations of each device.</p>
+        <p>So long as everyone knows the song structure, the audience will hear the band playing in unison.
+        </p>
+        <br>
+        <hr><br>
+        <p>Question? - Ping us on chat!<br>(we're at home with rest of you)</p>
       </div>
+      <br><br><br><br><br>
     </div>
-    <div id="bars" class="flexRow mostWidth">
-      <div class="gridItem count count1">
-        <svg class="barDot" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.4 42.4">
-          <circle id="XMLID_6130_" cx="21.2" cy="21.2" r="15.2" />
-        </svg>
-      </div>
-      <div class="gridItem count count2">
-        <svg class="barDot" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.4 42.4">
-          <circle id="XMLID_6130_" cx="21.2" cy="21.2" r="15.2" />
-        </svg>
-      </div>
-      <div class="gridItem count count3">
-        <svg class="barDot" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.4 42.4">
-          <circle id="XMLID_6130_" cx="21.2" cy="21.2" r="15.2" />
-        </svg>
-      </div>
-      <div class="gridItem count count4">
-        <svg class="barDot" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.4 42.4">
-          <circle id="XMLID_6130_" cx="21.2" cy="21.2" r="15.2" />
-        </svg>
-      </div>
-    </div>
-    <br>
-    <div class="gridItem one">
-      <p id="adjustVal" class="callOut">0</p>
-      <input id="adjust" type="range" name="adjust" value="0" min="-50" max="50">
-        <p style="margin-bottom: 0">Sync with another device</p>
-    </div>
-    <div class="gridItem one">
-      <div id="sound" class="hideMobile">
-        <svg id="soundOff" class="hide" class="" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.5 117.5">
-          <path
-            d="M47.1,50.7H40v16.1h7.1l6.8,7.2h7.5V43.5H54L47.1,50.7z M56.1,68.4l-6.7-7h-4V56h4l6.7-7V68.4z
-               M75.1,59.6l4.4,4.4l-3.8,3.8l-4.4-4.4l-4.4,4.4L63.2,64l4.4-4.4l-4.4-4.4l3.8-3.8l4.4,4.4l4.4-4.4l3.8,3.8L75.1,59.6z" />
-        </svg>
-        <svg id="soundOn" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.5 117.5">
-          <path d="M47.1,50.7H40v16.1h7.1l6.8,7.2h7.5V43.5H54L47.1,50.7z M56.1,68.4l-6.7-7h-4V56h4l6.7-7V68.4z
-                 M74.7,71.5l-3.5-3.5c2.4-2.4,3.7-5.5,3.7-8.9c0-3.4-1.3-6.5-3.7-8.9l3.5-3.5c3.3,3.3,5.1,7.7,5.1,12.4C79.9,63.8,78,68.2,74.7,71.5
-                z M68.3,65.1l-3.5-3.5c1.4-1.4,1.4-3.6,0-5l3.5-3.5C71.7,56.4,71.7,61.8,68.3,65.1z" />
-        </svg>
-        <svg id="soundSvg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          viewBox="-8132 8133.4 117.5 117.5">
-          <path class="white" d="M-8073.3,8148.5c24.3,0,44,19.7,44,44c0,24.3-19.7,44-44,44c-24.3,0-44-19.7-44-44
-          C-8117.3,8168.2-8097.6,8148.5-8073.3,8148.5z M-8073.2,8246.5c-0.6,0-1.2,0-1.8,0l0.2-5c0.6,0,1.1,0,1.7,0c1,0,2.1,0,3.1-0.1l0.3,5
-          C-8070.9,8246.5-8072.1,8246.5-8073.2,8246.5z M-8083.4,8245.6c-1.7-0.3-3.4-0.7-5.1-1.2l1.4-4.8c1.5,0.4,3.1,0.8,4.6,1.1
-          L-8083.4,8245.6z M-8061.5,8245.2l-1.1-4.9c1.6-0.3,3.1-0.8,4.6-1.3l1.5,4.8C-8058.1,8244.4-8059.8,8244.9-8061.5,8245.2z
-           M-8096.4,8241.4c-1.6-0.7-3.1-1.6-4.6-2.5l2.6-4.3c1.4,0.8,2.8,1.6,4.2,2.2L-8096.4,8241.4z M-8048.6,8240.7l-2.3-4.5
-          c1.4-0.7,2.8-1.5,4.1-2.4l2.7,4.2C-8045.5,8239-8047.1,8239.9-8048.6,8240.7z M-8107.9,8234.1c-1.3-1.1-2.6-2.3-3.9-3.5l3.5-3.5
-          c1.1,1.1,2.3,2.2,3.5,3.2L-8107.9,8234.1z M-8037.3,8233l-3.3-3.8c1.2-1,2.3-2.2,3.4-3.3l3.6,3.4
-          C-8034.8,8230.6-8036,8231.8-8037.3,8233z M-8117.2,8224.2c-1-1.4-2-2.9-2.9-4.4l4.3-2.5c0.8,1.4,1.7,2.7,2.6,4L-8117.2,8224.2z
-           M-8028.3,8222.8l-4.1-2.8c0.9-1.3,1.7-2.7,2.5-4.1l4.4,2.4C-8026.4,8219.8-8027.3,8221.3-8028.3,8222.8z M-8123.8,8212.2
-          c-0.6-1.6-1.2-3.3-1.7-5l4.8-1.4c0.4,1.5,1,3,1.5,4.5L-8123.8,8212.2z M-8022.1,8210.7l-4.7-1.7c0.5-1.5,1-3,1.4-4.6l4.8,1.2
-          C-8021,8207.3-8021.5,8209-8022.1,8210.7z M-8127.2,8199c-0.2-1.7-0.4-3.5-0.4-5.2l5-0.2c0,1.6,0.2,3.2,0.4,4.8L-8127.2,8199z
-           M-8019.1,8197.4l-5-0.5c0.2-1.6,0.2-3.2,0.2-4.8v-0.2h5v0.2C-8018.8,8193.9-8018.9,8195.6-8019.1,8197.4z M-8122.3,8186l-5-0.6
-          c0.2-1.7,0.5-3.5,0.9-5.2l4.9,1.1C-8121.8,8182.9-8122.1,8184.4-8122.3,8186z M-8024.4,8184.3c-0.2-1.6-0.6-3.1-1-4.7l4.8-1.3
-          c0.4,1.7,0.8,3.4,1.1,5.1L-8024.4,8184.3z M-8119.3,8174l-4.7-1.8c0.6-1.6,1.4-3.2,2.2-4.8l4.5,2.3
-          C-8118,8171.1-8118.7,8172.5-8119.3,8174z M-8027.9,8172.4c-0.6-1.5-1.3-2.9-2.1-4.3l4.4-2.4c0.8,1.5,1.6,3.1,2.3,4.7
-          L-8027.9,8172.4z M-8113.3,8163.1l-4-2.9c1-1.4,2.1-2.8,3.3-4.1l3.7,3.3C-8111.4,8160.6-8112.4,8161.9-8113.3,8163.1z
-           M-8034.2,8161.8c-1-1.3-2-2.5-3.1-3.6l3.6-3.4c1.2,1.3,2.4,2.6,3.4,4L-8034.2,8161.8z M-8104.9,8154.1l-3.2-3.8
-          c1.3-1.1,2.8-2.2,4.2-3.2l2.8,4.1C-8102.4,8152.1-8103.6,8153.1-8104.9,8154.1z M-8043,8153c-1.3-1-2.6-1.9-3.9-2.7l2.7-4.2
-          c1.5,0.9,2.9,1.9,4.3,3L-8043,8153z M-8094.4,8147.4l-2.1-4.5c1.6-0.7,3.2-1.4,4.9-2l1.7,4.7
-          C-8091.5,8146.1-8093,8146.8-8094.4,8147.4z M-8053.7,8146.7c-1.5-0.6-3-1.2-4.5-1.7l1.5-4.8c1.7,0.5,3.3,1.2,4.9,1.8
-          L-8053.7,8146.7z M-8082.7,8143.6l-0.9-4.9c1.7-0.3,3.5-0.6,5.2-0.7l0.5,5C-8079.5,8143.1-8081.1,8143.3-8082.7,8143.6z
-           M-8065.6,8143.3c-1.6-0.2-3.2-0.4-4.7-0.5l0.3-5c1.7,0.1,3.5,0.3,5.2,0.6L-8065.6,8143.3z" />
-        </svg>
-      </div>
-    </div>
-    <br>
-    <p class='showMobile'><strong>For sound, view on desktop</strong></p>
-    <br>
-    <small class="textCenter">Share this url with people from anywhere in the world to all hear the same beat at the same time.</small>
-    <br><br><br>
+  </div>
   </div>
 
-  </div>
-<footer>
-  <a href="/">What is this thing?</a>
-</footer>
 
 
 
