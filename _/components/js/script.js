@@ -9,7 +9,7 @@ $(document).ready(function () {
   var h = new Audio(h1);
   var hh = new Audio(h2);
 
-  var bpm = window.location.href.replace("http://localhost:88", "").replace("http://joinametronome.com/", "").replace("/", ""),
+  var bpm = (window.location.pathname.match(/\d+/)||[""])[0],
     b = Math.round(60000 / bpm);
 
   $("#bpm").html(bpm)
