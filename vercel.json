@@ -4,5 +4,5 @@
   "installCommand": "",
   "outputDirectory": ".",
   "cleanUrls": true,
-  "rewrites": [{ "source": "/:bpm(\\d+)", "destination": "/index-met.html" }]
+  "rewrites": [{ "source": "/:bpm(\\d+)", "destination": "/index-met" }]
 }
